@@ -1,4 +1,135 @@
+<!DOCTYPE html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This is my first page</title>
+
+<style>
+	*{
+		font-family: sans-serif;
+		box-sizing: border-box;
+		overflow:hidden;
+		margin:0px;
+		padding:0px;
+	}
+
+	#title{
+		padding-top:30px;
+		padding-bottom:30px;
+		text-align:center;
+		font-size:1.75em;
+		font-weight:bold;
+	}
+
+	.section_title{
+		font-size:1.25em;
+		font-weight:bold;
+		position: relative;
+		left:50%;
+		border-left: 1px black solid;
+		border-bottom: 1px black solid;
+		text-align:center;
+		margin: 0px;
+
+		width:50%;
+	}
+
+	p{
+		padding: 5px;
+		width:90%;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	div.container{
+		width:99%;
+		border-top: 0.5px solid;
+		border-bottom: 0.5px solid;
+		border-color: black;
+		margin: 0px auto;
+		align-items: center;
+
+	}
+
+	#chicken div{
+		background-color: #A8BEFF;
+	}
+	#chicken p.section_title{
+		background-color: blue;
+	}
+
+	#beef div{
+		background-color: #FFCFCF;
+	}
+	#beef p.section_title{
+		background-color: red;
+	}
+	
+	#sushi div{
+		background-color: #FFFFAD;
+	}
+	#sushi p.section_title{
+		background-color: yellow;
+	}
+
+	div.container>div{
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+
+	.element{
+		width:90%;
+		margin-right:auto;
+		margin-left:auto;
+		border: 1px black solid;
+		background-color: #666A6B;
+	}
+	@media(min-width:992px){
+		.col-lg{
+			float:left;
+			width:33.33%;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		.col-md{
+			float:left;
+			width:50%;
+		}
+
+		#sushi{
+			width:100%;
+		}
+		#sushi > .element{
+			width:95%;
+		}
+	}
+
+</style>
+
 </head>
+
 <body>
+<p id = "title"> Assignment 2</p>
+<div class ="container">
+
+	<div class = "cell col-lg col-md" id = "chicken" >
+		<div class="element">
+			<p class= "section_title"> Chicken</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+	</div> 
+	<div class = "cell col-lg col-md" id = "beef">
+		<div class = "element">
+			<p class= "section_title"> Beef</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+	</div>
+	<div class = "cell col-lg col-md" id = "sushi">
+		<div class = "element">
+			<p class= "section_title"> Sushi</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+	</div>
+
+</div>
 </body>
