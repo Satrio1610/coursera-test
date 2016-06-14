@@ -32,8 +32,8 @@ p{
 	margin-right:auto;
 	margin-left:auto;
 }
+
 div.container{
-	width:99%;
 	border-top: 0.5px solid;
 	border-bottom: 0.5px solid;
 	border-color: black;
@@ -59,14 +59,9 @@ div.container{
 #sushi p.section_title{
 	background-color: yellow;
 }
-div.container>div{
-	margin-top:5px;
-	margin-bottom:5px;
-}
+
 .element{
-	width:90%;
-	margin-right:auto;
-	margin-left:auto;
+	margin:5px;
 	border: 1px black solid;
 	background-color: #666A6B;
 }
@@ -83,8 +78,5 @@ div.container>div{
 	}
 	#sushi{
 		width:100%;
-	}
-	#sushi > .element{
-		width:95%;
 	}
 }

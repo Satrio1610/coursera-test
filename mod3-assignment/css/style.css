@@ -1,0 +1,51 @@
+body{
+	background-color:#c0392b;
+	padding-top:50px;
+	text:cursive;
+}
+
+#header-nav{
+	background-color: #f7cbba;
+	border:0;
+	padding:0px;
+}
+
+.navbar-brand h1{
+	margin:-7.5px; 
+	color:#ffffff;
+	text-decoration: none;
+	font-family: 'Pacifico', 'cursive';
+	font-size: 1.7em;
+}
+
+h2,h3{
+	color:#ffffff;
+	text-decoration: none;
+	font-family: 'Pacifico', 'cursive';
+}
+
+h2#main-content-title {
+	margin-bottom: 20px;
+}
+
+#chicken,#sushi,#beef{
+	border:2px dashed;
+	margin-bottom: 10px;
+	border-color: #ffffff;
+	background-color: #fdd6c0;
+}
+
+#main-content h3{
+	padding:0px;
+	margin-top:15px;
+}
+
+#nav-list{
+	text-align:center;
+	font-family:cursive;
+}
+
+#nav-list a{
+	color:#ffffff;
+	font-family:cursive;
+}
